@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>京东商品导购</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            /* 让导购盒子在浏览器居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+        .container {
+            width: 740px;
+            height: 800px;
+            border: 10px groove #9966cc; /* 凹槽groove样式，#9966cc */
+            border-radius: 15px;
+            box-shadow: 0 0 8px #ccc; /* 阴影 #ccc */
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: red;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .goods-wrap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .goods-item {
+            text-align: center;
+            border: 10px groove #9966cc;
+            box-shadow: 0 0 6px #ccc;
+            padding: 8px;
+            transition: all 0.2s;
+        }
+        /* 鼠标悬浮：虚线边框 #9999cc */
+        .goods-item:hover {
+            border-style: dashed;
+            border-color: #9999cc;
+        }
+        .goods-item img {
+            width: 100%;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .goods-name {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        .goods-tip {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+        .goods-price {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>京东商品导购</h1>
+        <div class="goods-wrap">
+            <div class="goods-item">
+                <img src="image/image5-2-1.jpg" alt="Vinhas单肩包">
+                <div class="goods-name">麦包包 Vinhas单肩包</div>
+                <div class="goods-tip">领券满减</div>
+                <div class="goods-price">¥128</div>
+            </div>
+            <div class="goods-item">
+                <img src="image/image5-2-2.jpg" alt="adidas休闲鞋">
+                <div class="goods-name">优购.adidas休闲鞋</div>
+                <div class="goods-tip">限时抢购</div>
+                <div class="goods-price">¥365</div>
+            </div>
+            <div class="goods-item">
+                <img src="image/image5-2-3.jpg" alt="NB女子复古鞋">
+                <div class="goods-name">优购.NB女子复古鞋</div>
+                <div class="goods-tip">限时抢购</div>
+                <div class="goods-price">¥299</div>
+            </div>
+            <div class="goods-item">
+                <img src="image/image5-2-4.jpg" alt="VANS女子硫化鞋">
+                <div class="goods-name">优购.VANS女子硫化鞋</div>
+                <div class="goods-tip">限时抢购</div>
+                <div class="goods-price">¥280</div>
+            </div>
+            <div class="goods-item">
+                <img src="image/image5-2-5.jpg" alt="匡威经典低帮鞋">
+                <div class="goods-name">优购.匡威经典低帮鞋</div>
+                <div class="goods-tip">限时抢购</div>
+                <div class="goods-price">¥199</div>
+            </div>
+            <div class="goods-item">
+                <img src="image/image5-2-6.jpg" alt="Belle羊皮女鞋">
+                <div class="goods-name">优购.Belle羊皮女鞋</div>
+                <div class="goods-tip">限时抢购</div>
+                <div class="goods-price">¥398</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
